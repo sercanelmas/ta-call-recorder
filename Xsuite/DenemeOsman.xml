@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite data-provider-thread-count="1" name="CallBlocker" parallel="tests">
+
+    <test name="CallBlocker Paywall Scenarios">
+        <parameter name="platformVersion" value="15.3"/>
+        <parameter name="deviceName" value="Osman's iPhone"/>
+        <parameter name="udid" value="00008110-000C75301EC1801E"/>
+        <parameter name="xcodeOrgId" value="J77B7C882F"/>
+        <parameter name="bundleId" value="com.madduck.callblocker"/>
+        <classes>
+            <!--<class name="com.callblocker.test.paywall.PassPaywallScenario"/> -->
+            <class name="com.callblocker.test.paywall.C275_PaywallView"/>
+
+
+        </classes>
+    </test>
+
+
+</suite>

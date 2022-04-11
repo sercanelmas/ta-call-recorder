@@ -1,0 +1,63 @@
+[INFO ] 2022-03-31 18:00:51.065 [main] Utils - [TestNG] Running:
+  /Users/osman/IdeaProjects/ta-call-recorder/Xsuite/Deneme.xml
+
+[INFO ] 2022-03-31 18:00:51.071 [TestNG-tests-1] Listener - I am in onStart method CallBlocker Paywall Scenarios
+[INFO ] 2022-03-31 18:01:08.269 [TestNG-tests-1] Listener - Test Started: c275_PaywallView
+[INFO ] 2022-03-31 18:01:08.935 [TestNG-tests-1] LandingPage - kullanıcı "Let's Start" butonuna basar.
+[ERROR] 2022-03-31 18:01:39.003 [TestNG-tests-1] BaseStepMethod - Web element is not visible!
+[ERROR] 2022-03-31 18:01:39.004 [TestNG-tests-1] BaseStepMethod - Web element is not clickable!
+[INFO ] 2022-03-31 18:01:39.009 [TestNG-tests-1] Listener - Test Failed: c275_PaywallView
+[ERROR] 2022-03-31 18:01:39.010 [TestNG-tests-1] Listener - java.lang.NullPointerException: Cannot invoke "io.appium.java_client.MobileElement.click()" because the return value of "com.callrecorder.test.base.BaseStepMethod.waitClickableByOfElement(io.appium.java_client.MobileElement)" is null
+[INFO ] 2022-03-31 18:01:39.433 [TestNG-tests-1] Listener - I am in onFinish method CallBlocker Paywall Scenarios
+[ERROR] 2022-03-31 18:01:39.694 [TestNG-tests-1] runtime - Error executing FreeMarker template
+freemarker.core._MiscTemplateException: Template inclusion failed (for parameter value "partials/exceptıon.ftl"):
+Template not found for name "spark/partials/exceptıon.ftl".
+The name was interpreted by this TemplateLoader: ClassTemplateLoader(resourceLoaderClass=com.aventstack.extentreports.ExtentReports, basePackagePath="templates/" /* relatively to resourceLoaderClass pkg */).
+
+----
+FTL stack trace ("~" means nesting-related):
+	- Failed at: #include "partials/${view.toString()}...  [in template "spark/spark.spa.ftl" at line 27, column 36]
+----
+	at freemarker.core.Include.accept(Include.java:164) ~[freemarker-2.3.30.jar:2.3.30]
+	at freemarker.core.Environment.visit(Environment.java:370) ~[freemarker-2.3.30.jar:2.3.30]
+	at freemarker.core.IteratorBlock$IterationContext.executedNestedContentForCollOrSeqListing(IteratorBlock.java:321) ~[freemarker-2.3.30.jar:2.3.30]
+	at freemarker.core.IteratorBlock$IterationContext.executeNestedContent(IteratorBlock.java:271) ~[freemarker-2.3.30.jar:2.3.30]
+	at freemarker.core.IteratorBlock$IterationContext.accept(IteratorBlock.java:244) ~[freemarker-2.3.30.jar:2.3.30]
+	at freemarker.core.Environment.visitIteratorBlock(Environment.java:644) ~[freemarker-2.3.30.jar:2.3.30]
+	at freemarker.core.IteratorBlock.acceptWithResult(IteratorBlock.java:108) ~[freemarker-2.3.30.jar:2.3.30]
+	at freemarker.core.IteratorBlock.accept(IteratorBlock.java:94) ~[freemarker-2.3.30.jar:2.3.30]
+	at freemarker.core.Environment.visit(Environment.java:334) ~[freemarker-2.3.30.jar:2.3.30]
+	at freemarker.core.Environment.visit(Environment.java:340) ~[freemarker-2.3.30.jar:2.3.30]
+	at freemarker.core.Environment.process(Environment.java:313) ~[freemarker-2.3.30.jar:2.3.30]
+	at freemarker.template.Template.process(Template.java:383) ~[freemarker-2.3.30.jar:2.3.30]
+	at com.aventstack.extentreports.templating.FreemarkerTemplate.processTemplate(FreemarkerTemplate.java:52) ~[extentreports-5.0.9.jar:?]
+	at com.aventstack.extentreports.templating.FreemarkerTemplate.getSource(FreemarkerTemplate.java:39) ~[extentreports-5.0.9.jar:?]
+	at com.aventstack.extentreports.templating.FreemarkerTemplate.writeTemplate(FreemarkerTemplate.java:45) ~[extentreports-5.0.9.jar:?]
+	at com.aventstack.extentreports.reporter.AbstractFileReporter.processTemplate(AbstractFileReporter.java:74) ~[extentreports-5.0.9.jar:?]
+	at com.aventstack.extentreports.reporter.ExtentSparkReporter.flush(ExtentSparkReporter.java:149) ~[extentreports-5.0.9.jar:?]
+	at com.aventstack.extentreports.reporter.ExtentSparkReporter.access$100(ExtentSparkReporter.java:27) ~[extentreports-5.0.9.jar:?]
+	at com.aventstack.extentreports.reporter.ExtentSparkReporter$1.onNext(ExtentSparkReporter.java:121) ~[extentreports-5.0.9.jar:?]
+	at com.aventstack.extentreports.reporter.ExtentSparkReporter$1.onNext(ExtentSparkReporter.java:113) ~[extentreports-5.0.9.jar:?]
+	at io.reactivex.rxjava3.subjects.PublishSubject$PublishDisposable.onNext(PublishSubject.java:310) ~[rxjava-3.0.4.jar:?]
+	at io.reactivex.rxjava3.subjects.PublishSubject.onNext(PublishSubject.java:226) ~[rxjava-3.0.4.jar:?]
+	at com.aventstack.extentreports.ReactiveSubject.onFlush(ReactiveSubject.java:83) ~[extentreports-5.0.9.jar:?]
+	at com.aventstack.extentreports.AbstractProcessor.onFlush(AbstractProcessor.java:85) ~[extentreports-5.0.9.jar:?]
+	at com.aventstack.extentreports.ExtentReports.flush(ExtentReports.java:279) ~[extentreports-5.0.9.jar:?]
+	at com.callrecorder.test.Listener.Listener.onFinish(Listener.java:41) ~[classes/:?]
+	at org.testng.TestRunner.fireEvent(TestRunner.java:944) ~[testng-7.5.jar:7.5]
+	at org.testng.TestRunner.afterRun(TestRunner.java:903) ~[testng-7.5.jar:7.5]
+	at org.testng.TestRunner.run(TestRunner.java:606) ~[testng-7.5.jar:7.5]
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:429) ~[testng-7.5.jar:7.5]
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:32) ~[testng-7.5.jar:7.5]
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:467) ~[testng-7.5.jar:7.5]
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58) ~[testng-7.5.jar:7.5]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:264) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635) [?:?]
+	at java.lang.Thread.run(Thread.java:833) [?:?]
+Caused by: freemarker.template.TemplateNotFoundException: Template not found for name "spark/partials/exceptıon.ftl".
+The name was interpreted by this TemplateLoader: ClassTemplateLoader(resourceLoaderClass=com.aventstack.extentreports.ExtentReports, basePackagePath="templates/" /* relatively to resourceLoaderClass pkg */).
+	at freemarker.template.Configuration.getTemplate(Configuration.java:2869) ~[freemarker-2.3.30.jar:2.3.30]
+	at freemarker.core.Environment.getTemplateForInclusion(Environment.java:2883) ~[freemarker-2.3.30.jar:2.3.30]
+	at freemarker.core.Include.accept(Include.java:162) ~[freemarker-2.3.30.jar:2.3.30]
+	... 36 more
